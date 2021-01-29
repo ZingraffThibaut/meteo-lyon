@@ -70,4 +70,8 @@ export default {
 .weather-weekly:last-child{
   border-radius: 0px 0px 30px 30px;
 }
+
+.weather-weekly:nth-child(2n){
+   background-color: rgba(28,32,46,0.55);
+}
 </style>

@@ -106,6 +106,13 @@ h1{
   justify-content: space-around;
   align-items: center;
 }
+
+@media (max-width: 450px){
+  .temp{
+    flex-direction: column;
+  }
+  
+}
 .temp-min, .temp-max{
   padding: 10px 25px;
   font-size: 18px;
