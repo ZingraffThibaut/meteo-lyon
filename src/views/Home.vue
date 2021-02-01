@@ -1,32 +1,44 @@
 <template>
   <div class="home">
     <app-bar />
-    <background />
-    <search-bar />
+    <div class="content" v-if="selected">
+      <city :city="firstCity" />
+    </div>
   </div>
 </template>
 
 <script>
 import AppBar from '../components/AppBar.vue'
-import Background from '../components/Background.vue'
-import SearchBar from '../components/SearchBar.vue'
+import City from '../components/City.vue'
+
+import { mapGetters } from 'vuex';
 
 
 export default {
   name: 'Home',
+  computed : mapGetters(['firstCity']),
+  data(){
+    return{
+      selected: true,
+      city: {},
+    }
+  },
   components: {
     AppBar,
-    Background,
-    SearchBar,
+    City,
+  },
+  methods:{
+
   }
 }
 </script>
 
 <style>
-.home {
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-  color: white;
+.home{
+  min-height: 100vh;
+}
+.content{
+  position: relative;
+  z-index: 1;
 }
 </style>
