@@ -33,7 +33,6 @@ export default {
                 .get(`${this.url_base}weather?q=${this.query}&lang=fr&appid=${this.key}`)
                 .then((reponse) => {
                     this.city = reponse.data;
-                    console.log(this.city);
                 });
             }
         },

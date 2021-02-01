@@ -35,10 +35,12 @@ export default {
 
 <style>
 .home{
+
   min-height: 100vh;
 }
 .content{
-  position: relative;
-  z-index: 1;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
 }
 </style>

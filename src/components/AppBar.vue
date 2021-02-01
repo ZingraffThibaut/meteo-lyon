@@ -37,9 +37,10 @@ export default {
 
 <style lang="scss">
 .app-bar {
-  position: relative;
+  position: fixed;
   display: flex;
   align-items: center;
+  width: 100%;
   height: 44px;
   font-size: 15px;
   z-index: 1;
