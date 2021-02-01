@@ -33,25 +33,20 @@ export default {
 
 <style lang="scss" scoped>
 .navigation{
-    position: absolute;
-    z-index: -1;
-    background-color: rgba(255,255,255,0.10);
+    position: fixed;
+    background-color: rgba(0,0,0,0.75);
     align-self: flex-start;
-    width: 100vw;
+    width: 100%;
     min-height: 100vh;
     color: white;
-    opacity: 0;
-    transition: 0.2s cubic-bezier(0.42, 0, 1.0, 1.0);
+    visibility: hidden;
 }
 .menu{
-    position: absolute;
-    z-index: -1;
+    position: fixed;
     height: 100vh;
     background-color: rgb(50,50,50);
 }
 .open{
-    z-index: 2;
-    opacity: 1;
-    transition: 1s cubic-bezier(0.42, 0, 1.0, 1.0);
+    visibility: visible;
 }
 </style>
