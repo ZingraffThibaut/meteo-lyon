@@ -170,7 +170,9 @@ export default {
         margin-right: 0;
         width: 100%;
         height: 400px;
-
+        div{
+            border-radius: 16px;
+        }
         .date{
             font-size: 2rem;
             margin-bottom: 5%;
@@ -180,6 +182,7 @@ export default {
         .dayPred{
             margin-left: -5%;
             width: 30%;
+            background-color: rgba(255, 0, 0, 0.685);
         }
         .day{
             margin: 0px 5%;
@@ -189,6 +192,8 @@ export default {
         }
         .dayNext{
             width: 30%;
+            background-color: rgba(0, 255, 0, 0.685);
+
         }
 
         

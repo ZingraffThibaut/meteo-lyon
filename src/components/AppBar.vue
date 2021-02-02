@@ -41,7 +41,7 @@ export default {
   display: flex;
   align-items: center;
   width: 100%;
-  height: 44px;
+  height: 70px;
   font-size: 15px;
   z-index: 1;
     .app-bar_l{
